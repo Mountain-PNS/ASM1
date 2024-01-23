@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="./src/output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <nav
+        class="bg-white border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800"
+      >
+        <div
+          class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl"
+        >
+          <a href="https://flowbite.com" class="flex items-center no-underline">
+            <img
+              src="https://flowbite.com/docs/images/logo.svg"
+              class="mr-3 h-6 sm:h-9"
+              alt="Flowbite Logo"
+            />
+            <span
+              class="self-center text-xl font-semibold whitespace-nowrap dark:text-white"
+              >Flowbite</span
+            >
+          </a>
+          <div class="flex items-center lg:order-2">
+            <a
+              href="login.html"
+              class="no-underline text-gray-800 dark:text-white hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800"
+              >Log in</a
+            >
+            <a
+              href="#"
+              class="text-white bg-red-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:bg-primary-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800 no-underline"
+              >Get started</a
+            >
+            <button
+              data-collapse-toggle="mobile-menu-2"
+              type="button"
+              class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+              aria-controls="mobile-menu-2"
+              aria-expanded="false"
+            >
+              <span class="sr-only">Open main menu</span>
+              <svg
+                class="w-6 h-6"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+              <svg
+                class="hidden w-6 h-6"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div
+            class="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1"
+            id="mobile-menu-2"
+          >
+            <ul
+              class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0"
+            >
+              <li class="">
+                <a
+                  href="#"
+                  class="no-underline block py-2 pr-4 pl-3 rounded bg-primary-700 lg:bg-transparent lg:text-primary-700 lg:p-0 dark:text-white"
+                  aria-current="page"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="no-underline block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+                  >Company</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="no-underline block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+                  >Marketplace</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="no-underline block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+                  >Features</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="no-underline block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+                  >Team</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="no-underline block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="">
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide my-3"
+        data-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              class="d-block w-full"
+              height="630"
+              src="https://gamecuoi.com/wp-content/uploads/2022/07/Thiet-ke-chua-co-ten.jpg"
+              alt="First slide"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-gray-100 dark:bg-gray-800 py-8">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row -mx-4">
+          <div class="md:flex-1 px-4">
+            <div class="h-[460px] rounded-lg bg-gray-300 dark:bg-gray-700 mb-4">
+              <img
+                class="w-full h-full object-cover"
+                src="data:image/jpeg;base64,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"
+                alt="Product Image"
+              />
+            </div>
+            <div class="flex -mx-2 mb-4">
+              <div class="w-1/2 px-2">
+                <button
+                  class="w-full bg-gray-900 dark:bg-gray-600 text-white py-2 px-4 rounded-full font-bold hover:bg-gray-800 dark:hover:bg-gray-700"
+                >
+                  Add to Cart
+                </button>
+              </div>
+              <div class="w-1/2 px-2">
+                <button
+                  class="w-full bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-white py-2 px-4 rounded-full font-bold hover:bg-gray-300 dark:hover:bg-gray-600"
+                >
+                  Add to Wishlist
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="md:flex-1 px-4">
+            <h2 class="text-2xl font-bold text-gray-800 dark:text-white mb-2">
+              {{products.title}}
+            </h2>
+            <p class="text-gray-600 dark:text-gray-300 text-sm mb-4">
+              {{products.description}}
+            </p>
+            <div class="flex mb-4">
+              <div class="mr-4">
+                <span class="font-bold text-gray-700 dark:text-gray-300"
+                  >Price:</span
+                >
+                <span class="text-gray-600 dark:text-gray-300"
+                  >${{products.price}}</span
+                >
+              </div>
+              <div>
+                <span class="font-bold text-gray-700 dark:text-gray-300"
+                  >Availability:</span
+                >
+                <span class="text-gray-600 dark:text-gray-300"
+                  >{{products.stock}}</span
+                >
+              </div>
+            </div>
+            <div class="mb-4">
+              <span class="font-bold text-gray-700 dark:text-gray-300"
+                >Select Color:</span
+              >
+              <div class="flex items-center mt-2">
+                <button
+                  class="w-6 h-6 rounded-full bg-gray-800 dark:bg-gray-200 mr-2"
+                ></button>
+                <button
+                  class="w-6 h-6 rounded-full bg-red-500 dark:bg-red-700 mr-2"
+                ></button>
+                <button
+                  class="w-6 h-6 rounded-full bg-blue-500 dark:bg-blue-700 mr-2"
+                ></button>
+                <button
+                  class="w-6 h-6 rounded-full bg-yellow-500 dark:bg-yellow-700 mr-2"
+                ></button>
+              </div>
+            </div>
+            <div class="mb-4">
+              <span class="font-bold text-gray-700 dark:text-gray-300"
+                >Select Size:</span
+              >
+              <div class="flex items-center mt-2">
+                <button
+                  class="bg-gray-300 dark:bg-gray-700 text-gray-700 dark:text-white py-2 px-4 rounded-full font-bold mr-2 hover:bg-gray-400 dark:hover:bg-gray-600"
+                >
+                  S
+                </button>
+                <button
+                  class="bg-gray-300 dark:bg-gray-700 text-gray-700 dark:text-white py-2 px-4 rounded-full font-bold mr-2 hover:bg-gray-400 dark:hover:bg-gray-600"
+                >
+                  M
+                </button>
+                <button
+                  class="bg-gray-300 dark:bg-gray-700 text-gray-700 dark:text-white py-2 px-4 rounded-full font-bold mr-2 hover:bg-gray-400 dark:hover:bg-gray-600"
+                >
+                  L
+                </button>
+                <button
+                  class="bg-gray-300 dark:bg-gray-700 text-gray-700 dark:text-white py-2 px-4 rounded-full font-bold mr-2 hover:bg-gray-400 dark:hover:bg-gray-600"
+                >
+                  XL
+                </button>
+                <button
+                  class="bg-gray-300 dark:bg-gray-700 text-gray-700 dark:text-white py-2 px-4 rounded-full font-bold mr-2 hover:bg-gray-400 dark:hover:bg-gray-600"
+                >
+                  XXL
+                </button>
+              </div>
+            </div>
+            <div>
+              <span class="font-bold text-gray-700 dark:text-gray-300"
+                >{{products.category}}:</span
+              >
+              <p class="text-gray-600 dark:text-gray-300 text-sm mt-2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed
+                ante justo. Integer euismod libero id mauris malesuada
+                tincidunt. Vivamus commodo nulla ut lorem rhoncus aliquet. Duis
+                dapibus augue vel ipsum pretium, et venenatis sem blandit.
+                Quisque ut erat vitae nisi ultrices placerat non eget velit.
+                Integer ornare mi sed ipsum lacinia, non sagittis mauris
+                blandit. Morbi fermentum libero vel nisl suscipit, nec tincidunt
+                mi consectetur.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="bg-gray-900 dark:bg-gray-900 lg:grid lg:grid-cols-5">
+      <div class="relative block h-32 lg:col-span-2 lg:h-full">
+        <img
+          src="https://images.unsplash.com/photo-1642370324100-324b21fab3a9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1548&q=80"
+          alt=""
+          class="absolute inset-0 h-full w-full object-cover"
+        />
+      </div>
+
+      <div class="px-4 py-16 sm:px-6 lg:col-span-3 lg:px-8">
+        <div class="grid grid-cols-1 gap-8 sm:grid-cols-2">
+          <div>
+            <p>
+              <span
+                class="text-xs uppercase tracking-wide dark:text-gray-400 text-white"
+              >
+                Call us
+              </span>
+
+              <a
+                href="#"
+                class="block text-2xl font-medium hover:opacity-75 no-underline dark:text-white sm:text-3xl text-white"
+              >
+                0123456789
+              </a>
+            </p>
+
+            <ul class="mt-8 space-y-1 text-sm text-white dark:text-gray-200">
+              <li>Monday to Friday: 10am - 5pm</li>
+              <li>Weekend: 10am - 3pm</li>
+            </ul>
+
+            <ul class="mt-8 flex gap-6">
+              <li>
+                <a
+                  href="/"
+                  rel="noreferrer"
+                  target="_blank"
+                  class="transition hover:opacity-75 dark:text-gray-200"
+                >
+                  <span class="sr-only">Facebook</span>
+
+                  <svg
+                    class="h-6 w-6 text-white"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="/"
+                  rel="noreferrer"
+                  target="_blank"
+                  class="transition hover:opacity-75 dark:text-gray-200"
+                >
+                  <span class="sr-only">Instagram</span>
+
+                  <svg
+                    class="h-6 w-6 text-white"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="/"
+                  rel="noreferrer"
+                  target="_blank"
+                  class="transition hover:opacity-75 dark:text-gray-200"
+                >
+                  <span class="sr-only">Twitter</span>
+
+                  <svg
+                    class="h-6 w-6 text-white"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"
+                    />
+                  </svg>
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="/"
+                  rel="noreferrer"
+                  target="_blank"
+                  class="transition hover:opacity-75 dark:text-gray-200"
+                >
+                  <span class="sr-only">GitHub</span>
+
+                  <svg
+                    class="h-6 w-6 text-white"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="/"
+                  rel="noreferrer"
+                  target="_blank"
+                  class="text-white no-underline transition hover:opacity-75 dark:text-gray-200"
+                >
+                  <span class="sr-only">Dribbble</span>
+
+                  <svg
+                    class="h-6 w-6"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c5.51 0 10-4.48 10-10S17.51 2 12 2zm6.605 4.61a8.502 8.502 0 011.93 5.314c-.281-.054-3.101-.629-5.943-.271-.065-.141-.12-.293-.184-.445a25.416 25.416 0 00-.564-1.236c3.145-1.28 4.577-3.124 4.761-3.362zM12 3.475c2.17 0 4.154.813 5.662 2.148-.152.216-1.443 1.941-4.48 3.08-1.399-2.57-2.95-4.675-3.189-5A8.687 8.687 0 0112 3.475zm-3.633.803a53.896 53.896 0 013.167 4.935c-3.992 1.063-7.517 1.04-7.896 1.04a8.581 8.581 0 014.729-5.975zM3.453 12.01v-.26c.37.01 4.512.065 8.775-1.215.25.477.477.965.694 1.453-.109.033-.228.065-.336.098-4.404 1.42-6.747 5.303-6.942 5.629a8.522 8.522 0 01-2.19-5.705zM12 20.547a8.482 8.482 0 01-5.239-1.8c.152-.315 1.888-3.656 6.703-5.337.022-.01.033-.01.054-.022a35.318 35.318 0 011.823 6.475 8.4 8.4 0 01-3.341.684zm4.761-1.465c-.086-.52-.542-3.015-1.659-6.084 2.679-.423 5.022.271 5.314.369a8.468 8.468 0 01-3.655 5.715z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+            <div>
+              <p class="font-bold text-white dark:text-white">Services</p>
+
+              <ul class="mt-6 space-y-4 text-sm">
+                <li>
+                  <a
+                    href="#"
+                    class="text-white no-underline transition hover:opacity-75 dark:text-gray-200"
+                  >
+                    1on1 Coaching
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="#"
+                    class="text-white no-underline transition hover:opacity-75 dark:text-gray-200"
+                  >
+                    Company Review
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="#"
+                    class="text-white no-underline transition hover:opacity-75 dark:text-gray-200"
+                  >
+                    Accounts Review
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="#"
+                    class="text-white no-underline transition hover:opacity-75 dark:text-gray-200"
+                  >
+                    HR Consulting
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="#"
+                    class="text-white no-underline transition hover:opacity-75 dark:text-gray-200"
+                  >
+                    SEO Optimisation
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <p class="font-bold text-white dark:text-white">Company</p>
+
+              <ul class="mt-6 space-y-4 text-sm">
+                <li>
+                  <a
+                    href="#"
+                    class="text-white no-underline transition hover:opacity-75 dark:text-gray-200"
+                  >
+                    About
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="#"
+                    class="text-white no-underline transition hover:opacity-75 dark:text-gray-200"
+                  >
+                    Meet the Team
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="#"
+                    class="text-white no-underline transition hover:opacity-75 dark:text-gray-200"
+                  >
+                    Accounts Review
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-12 border-t border-gray-100 pt-12 dark:border-gray-800">
+          <div class="sm:flex sm:items-center sm:justify-between">
+            <ul class="flex flex-wrap gap-4 text-xs">
+              <li>
+                <a
+                  href="#"
+                  class="text-white font-semibold no-underline transition hover:opacity-75 dark:text-gray-400"
+                >
+                  Terms & Conditions
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="#"
+                  class="text-white font-semibold no-underline transition hover:opacity-75 dark:text-gray-400"
+                >
+                  Privacy Policy
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="#"
+                  class="text-white font-semibold no-underline transition hover:opacity-75 dark:text-gray-400"
+                >
+                  Cookies
+                </a>
+              </li>
+            </ul>
+
+            <p
+              class="mt-8 text-xs text-white font-semibold no-underline dark:text-gray-400 sm:mt-0"
+            >
+              &copy; 2022. Company Name. All rights reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
